@@ -1,0 +1,49 @@
+*{box-sizing: border-box;
+
+}
+body{
+    width: 40%;
+    min-height: 440px;
+    margin: auto;
+    margin-top: 130px;
+    background-color: rgb(155, 9, 130);
+}
+.box{
+    width: 70%;
+    height: 350px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: rgb(2, 20, 32);
+    padding: 15px;
+    border-radius: 6px;
+}
+.box h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.form-control{
+    width: 380px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.form-control input{
+    border-radius: 6px;
+    width: 380px;
+    height: 40px;
+}
+
+.formcontrol{
+    width: 380px;
+    margin: 0;
+    text-align: center;
+}
+
+.formcontrol input{
+    margin-right: 25px;
+    margin-left: 25px;
+    font-size: 17px;
+    width: 40px;
+}

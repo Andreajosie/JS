@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="box">
+    <h1>Calculator</h1>
+
+        <div class="form-control">
+               <input id="number1" type="text" placeholder="Enter the first number">
+             </div> <br>
+
+             <div class="form-control">
+             <input id="number2" type="text" placeholder="Enter the second number">
+           </div> <br>
+
+<div class="formcontrol">
+    <input type="button" value="+" onclick="addition()">
+    <input type="button" value="-" onclick="subtraction()">
+    <input type="button" value="*" onclick="multiplication()">
+    <input type="button" value="/" onclick="division()">
+       
+</div>  <br>
+
+    <div class="form-control" id="display">
+    </div>
+
+</div>
+
+
+
+
+
+
+    <script>
+    function addition(){
+         let input1 = document.getElementById("number1");
+         let input2 = document.getElementById("number2");
+         let sum  = parseInt(input1.value) + parseInt(input2.value);
+         let display = document.getElementById("display");
+         display.innerHTML = sum;
+    }
+    
+    function subtraction(){
+         let input1 = document.getElementById("number1");
+         let input2 = document.getElementById("number2");
+         let subtraction  = parseInt(input1.value) - parseInt(input2.value);
+         let display = document.getElementById("display");
+         display.innerHTML = subtraction;
+    }
+
+    function multiplication(){
+         let input1 = document.getElementById("number1");
+         let input2 = document.getElementById("number2");
+         let multiplication  = parseInt(input1.value) * parseInt(input2.value);
+         let display = document.getElementById("display");
+         display.innerHTML = multiplication;
+    }
+
+    function division(){
+         let input1 = document.getElementById("number1");
+         let input2 = document.getElementById("number2");
+         let division  = parseInt(input1.value) / parseInt(input2.value);
+         let display = document.getElementById("display");
+         display.innerHTML = division
+    }
+    
+    
+    
+    
+    
+    
+    </script>
+</body>
+</html>
